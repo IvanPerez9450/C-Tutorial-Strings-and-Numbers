@@ -1,0 +1,59 @@
+namespace FirstProject
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string characterName = "Ivan";
+            int characterAge = 33;
+            string phrase = "coding is the future" + " I must learn it!";
+            string lesson = "Lesson";
+            string lessonType = "string numbers";
+
+            Console.WriteLine(lesson.ToUpper() + lessonType.ToUpper().Substring(0,6));
+            Console.WriteLine("There one was a man named " + characterName);
+            Console.WriteLine("He was " + characterAge + " years old");
+            Console.WriteLine("He really liked the name " + characterName);
+            Console.WriteLine("But he did not liked to being " + characterAge);
+            
+            Console.WriteLine(phrase);
+            Console.WriteLine(phrase.Length);
+            Console.WriteLine(phrase.ToUpper());
+            Console.WriteLine(phrase.Contains("coding"));
+            Console.WriteLine(phrase[2]);
+            Console.WriteLine(phrase.IndexOf("I"));
+            Console.WriteLine(phrase.Substring(21,6));
+
+
+
+            Console.WriteLine(lesson.ToUpper() + lessonType.ToUpper().Substring(6,8));
+            Console.WriteLine(5 + 8);
+            Console.WriteLine(5 - 8);
+            Console.WriteLine(5 * 8);
+            Console.WriteLine(5 / 8);
+            Console.WriteLine(5 + 8 * 2);
+            Console.WriteLine((5 + 8) * 2);
+            Console.WriteLine(5 * 2.3);
+
+            int num = 6;
+            num++;
+            Console.WriteLine(num);
+            Console.WriteLine(Math.Pow(3,2));
+            Console.WriteLine(Math.Sqrt(36));
+            Console.WriteLine(Math.Max(36, 24));
+            Console.WriteLine(Math.Min(36, 24));
+            Console.WriteLine(Math.Round(4.6));
+
+            Console.Write("Enter Your fullName: ");
+            string fullName = Console.ReadLine();
+            Console.Write("Enter Your Age: ");
+            string age = Console.ReadLine();
+            Console.WriteLine(" Hello " + fullName + " you are " + age);
+
+            Console.ReadLine();
+
+
+
+        }
+    }
+}
